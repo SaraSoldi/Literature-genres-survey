@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Literary Genres Survey</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+
+  <div class="header">
+
+    <h1 id="title">Literary Genres Survey</h1>
+    <p id="description">Thank you for taking the time to help us know the most read literary genres at this moment in time.</p>
+  </div>
+  <main>
+
+    <form action="" id="survey-form">
+      <div class="neao">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" name="" value="" placeholder="Your Name" required class="form-control">
+      </div>
+      <div class="neao">
+        <label id="email-label" for="email">E-mail</label>
+        <input id="email" type="email" name="" value="" placeholder="Your E-mail" required class="form-control">
+      </div>
+      <div class="neao">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" name="" value="" placeholder="Your Age" min="6" max="99" class="form-control">
+      </div>
+      <div class="neao">
+        <label for="dropdown">Which is your current occupation?</label>
+        <select id="dropdown" name="" class="form-control" required>
+          <option disabled selected value>Select your occupation</option>
+          <option value="">Student</option>
+          <option value="">Full-time job</option>
+          <option value="">Part-time job</option>
+          <option value="">Other</option>
+          <option value="">Prefer not to say</option>
+        </select>
+      </div>
+      <div class="radio-buttons">
+        <p>How many books do you read each year?</p>
+        <label for="one"><input name='Number of books read in a year' id="one" value='1/2' type="radio"> 1-2 books</label>
+        <label for="two"><input name='Number of books read in a year' id="two" value='3/5' type="radio"> 3-5 books</label>
+        <label for="three"><input name='Number of books read in a year' id="three" value='5+' type="radio"> more than 5 books</label>
+      </div>
+      <div class="div-genres">
+        <p>Which literary genres do you prefer?<span>(Check all that apply)</span></p>
+        <div class="div-genres2">
+
+
+        <label class="genres" for="drama"><input id="drama" value="drama" type="checkbox" name="literary-genres"> Drama</label>
+        <label class="genres" for="fable"><input id="fable" value="fable" type="checkbox" name="literary-genres"> Fable</label>
+        <label class="genres" for="fairy-tale"><input id="fairy-tale" value="fairy-tale" type="checkbox" name="literary-genres"> Fairy Tale</label>
+        <label class="genres" for="fantasy"><input id="fantasy" value="fantasy" type="checkbox" name="literary-genres"> Fantasy</label>
+        <label class="genres" for="fiction"><input id="fiction" value="fiction" type="checkbox" name="literary-genres"> Fiction</label>
+        <label class="genres" for="fiction-verse"><input id="fiction-verse" value="fiction-verse" type="checkbox" name="literary-genres"> Fiction in Verse</label>
+        <label class="genres" for="folklore"><input id="folklore" value="folklore" type="checkbox" name="literary-genres"> Folklore</label>
+        <label class="genres" for="historical-fiction"><input id="historical-fiction" value="historical-fiction" type="checkbox" name="literary-genres"> Historical Fiction</label>
+        <label class="genres" for="horror"><input id="horror" value="horror" type="checkbox" name="literary-genres"> Horror</label>
+        <label class="genres" for="humor"><input id="humor" value="humor" type="checkbox" name="literary-genres"> Humor</label>
+        <label class="genres" for="legend"><input id="legend" value="legend" type="checkbox" name="literary-genres"> Legend</label>
+        <label class="genres" for="mistery"><input id="mistery" value="mistery" type="checkbox" name="literary-genres"> Mistery</label>
+        <label class="genres" for="mythology"><input id="mythology" value="mythology" type="checkbox" name="literary-genres"> Mythology</label>
+        <label class="genres" for="poetry"><input id="poetry" value="poetry" type="checkbox" name="literary-genres"> Poetry</label>
+        <label class="genres" for="realistic-fiction"><input id="realistic-fiction" value="realistic-fiction" type="checkbox" name="literary-genres"> Realistic Fiction</label>
+        <label class="genres" for="science-fiction"><input id="science-fiction" value="science-fiction" type="checkbox" name="literary-genres"> Science Fiction</label>
+        <label class="genres" for="short-story"><input id="short-story" value="short-story" type="checkbox" name="literary-genres"> Short Story</label>
+        <label class="genres" for="tall-tale"><input id="tall-tale" value="tall-tale" type="checkbox" name="literary-genres"> Tall Tale</label>
+          </div>
+      </div>
+      <div class="textarea">
+        <p>Additional comments:</p>
+        <textarea class="comments" name="comment" rows="8" cols="80" placeholder="Enter Your Comments Here..."></textarea>
+      </div>
+      <div class="div-button"><button id='submit' class='submit-button' type="submit" name="button">Submit</button></div>
+
+    </form>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: rgba(34, 111, 143);
+  background-image: linear-gradient(115deg, rgba(34, 111, 143, 0.8), rgba(38, 89, 116, 0.9)), url(books.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: 70%;
+  margin: 1% auto;
+}
+
+h1 {
+  padding: 3% 0 1%;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+#description {
+  padding: 0 0 3%;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+main {
+  letter-spacing: 1.5px;
+  position: relative;
+  background-color: rgba(8, 35, 47, 0.8);
+  width: 70%;
+  margin: 1% auto 0;
+  border-radius: 0.25rem;
+  z-index: 1000;
+  padding-top: 2.5%;
+}
+
+form {
+  line-height: 2;
+  margin: auto 2%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.neao, .radio-buttons, .div-genres, .textarea, .div-button {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+  padding: 0.4rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.div-genres2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.genres {
+  padding-right: 1.5rem;
+}
+
+span {
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+.comments {
+  width: 100%;
+  padding: 0.4rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  display: block;
+  font-family: inherit;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #00917c;
+  color: inherit;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin: 5% auto 4%;
+}
+
+.submit-button:hover {
+  background: #4ac8b7;
+}
+
+
+@media only screen and (max-width: 600px){
+  main, .header{
+    width: 95%;
+  }
+
+  .div-genres2{
+    flex-direction: column;
+  }
+}
